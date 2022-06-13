@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif, "Open Sans";
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+div img{
+    display: block;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: #122A57;
+    color: #fff;
+}
+
+header .list-items{
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-items li a{
+    color: #fff;
+}
+
+header .menu{
+    justify-content: space-between;
+}
+
+.apresentacao{
+    height: 70vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao .texto-apresentacao{
+    min-height: 200px;
+    width: 100%;
+}
+
+.texto-apresentacao h1{
+    color: #122A57;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #122A57;
+    color: #fff;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+#quem-somos{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#quem-somos h2{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #122A57;
+}
+
+#quem-somos h2::before{
+    content: "";
+    height: 50px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #122A57;
+    position: relative;
+}
+
+#quem-somos p{
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+#quem-somos img{
+    min-width: 520px;
+}
+
+.container-externo{
+    background-color: #122A57;
+    width: 100%;
+}
+
+#servicos{
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+#servicos h2{
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.list-servicos{
+    display: flex;
+    height: 50vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-servicos .item-servico{
+    text-align: center;
+}
+
+.item-servico a{
+    width: 225px;
+    height: 60px;
+    margin-top: 30px;
+    padding: 15px;
+    line-height: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: #122A57;
+    text-decoration: none;
+}
+
+.item-servico p{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-servico img{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+
+#planos{
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 50px;
+}
+
+#planos h2{
+    font-size: 32px;
+    color: #122A57;
+}
+
+.list-planos{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.item-planos{
+    max-width: 240px;
+    flex: 1;
+    margin-right: 20px;
+    padding: 10px;
+    border: 5px solid #122A57;
+}
+
+.item-planos .btn{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.item-planos h3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.item-planos h3::after{
+    content: "";
+    background-color: #122A57;
+    width: 100%;
+    height: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.item-planos ul{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.item-planos ul li{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.item-planos ul li::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #122A57;
+    margin-right: 5px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    background-color: #122A57;
+    height: 70px;
+}
+
+footer .footer{
+    justify-content: space-between;
+    color: #fff;
+}
+
+/* Mobile queries */
+
+@media(max-width: 992px){
+
+    .menu{
+        flex-wrap: wrap;
+     }
+
+    .menu ul li{
+        margin-top: 10px;
+    }
+
+
+
+    .contaier{
+        flex-direction: column;
+    }
+
+    .texto-apresentacao{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao .texto-apresentacao{
+        width: 100%;
+    }
+
+    #quem-somos{
+        flex-direction: column-reverse;
+    }
+
+    #quem-somos img{
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .list-servicos{
+        flex-direction: column;
+        height: 80vh;
+    }
+
+    .item-servico img{
+        width: 70%;
+        margin: auto;
+    }
+
+    .list-planos{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    #planos h2{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .list-planos .item-planos{
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 500px){
+    .menu h1, ul{
+        margin: 0 auto;
+    }
+}
