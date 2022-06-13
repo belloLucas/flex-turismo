@@ -1,4 +1,4 @@
-# Projeto de flexbox!
+# Projeto de flexbox - Flex Turismo
 
 Esse projeto é baseado em um site da uma agência de turismo, foi todo feito usando flexbox e é totalmente responsível, se adaptando bem em diversos tipos de telas diferentes.
 
